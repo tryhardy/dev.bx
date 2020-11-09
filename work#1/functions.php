@@ -22,7 +22,6 @@ function readFromConsole($array, $continueInput = "Y")
 	}
 
 	while($continue == "N") {
-		echo "No" . PHP_EOL;
 		$summa = array_sum($array);
 		exit("Сумма всех введенных значений = $summa");
 	}
