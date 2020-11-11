@@ -1,6 +1,6 @@
 <?php
 /*
-*  @test readFromConsole('', '') - true;
+*  @test readFromConsole('', 'true') - true;
 *  @test readFromConsole('', 'false') - false;
 *  @test readFromConsole('', '!stop') - null;
 *  @test readFromConsole('', '1.3') - 1.3;
@@ -10,8 +10,8 @@
 
 function test()
 {
-	$result = readFromConsole('', '');
-	assertEquals(true, $result, "readFromConsole('', '') - true: ");
+	$result = readFromConsole('', 'true');
+	assertEquals(true, $result, "readFromConsole('', 'true') - true: ");
 
 	$result = readFromConsole('', 'false');
 	assertEquals(false, $result,  "readFromConsole('', 'false') - false: ");

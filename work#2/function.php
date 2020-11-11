@@ -22,13 +22,11 @@ function readFromConsole($console, $args = null)
 		return $result;
 
 	} else {
-		if($value == '' || $value == 'true') {
-			$result = (bool) true;
-			return $result;
+		if($value == 'true') {
+			return true;
 
 		} else if($value == 'false') {
-			$result = false;
-			return $result;
+			return false;
 
 		} else if($value == '!stop') {
 			$result = null;
